@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: ; */
+    font-size: 16px;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(https://i.pinimg.com/564x/a5/a9/69/a5a969453f1141e048a89f1156298c2b.jpg);
+    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+header .textos{
+    margin-top: 152px;
+}
+header .titulo{
+    font-size: 85px;
+}
+header .subtitulo{
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+/* reutilizable */
+.boton{
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+}
+/* reutilizable */
+.sesgoabajo{
+    z-index: 10;
+    position: absolute;
+    bottom: 0; /*abajo*/
+    left: 0;
+    border-width: 0 0 35vh 100vw; /* rectaungulo responsive */
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0; /*arriba*/
+    left: 0;
+    border-width: 0 0 35vh 100vw; /* rectaungulo responsive */
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
