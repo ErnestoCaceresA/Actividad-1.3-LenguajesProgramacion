@@ -32,6 +32,7 @@ header .subtitulo{
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 32px;
+    /* color: red; */
 }
 header .boton{
     display: inline-block;
@@ -43,6 +44,12 @@ header .boton{
     text-align: center;
     text-decoration: none;
     border-radius: 16px;
+}
+header .boton:hover{
+    border-radius: 0;
+    width: 140px;
+    font-size: 23px;
+    transition:  border-radius 0.5s, width 0.5s,  font-size 1s;
 }
 /* reutilizable */
 .sesgoabajo{
@@ -84,14 +91,10 @@ header .boton{
     font-weight: 300;
     text-align: center;
     margin-bottom: 24px;
+    color: red;
 }
-/* .parrafo{
-    margin-bottom: 13px;
-    font-weight: 300;
-    text-align: justify;
-    line-height: 24px;
-    color: rgb(24, 16, 16);
-} */
+
+/* GRID */
 .grid{
     display: grid;
     grid-template-columns: repeat(2, minmax(120px,1fr));
@@ -174,6 +177,20 @@ header .boton{
     margin: 25px;
     text-align: justify;
 }
+
+
+/* lista */
+.lista li{
+    margin-left: 50px;
+}
+/* gift */
+.gift{
+    margin-left: 20vw;
+    margin-top: 40px;
+    width: 400px;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 500px){
     .grid{
